@@ -7,15 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0182C5308EEB182140F14B73 /* Pods_BinetTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FC59F204A820F212963E2FA /* Pods_BinetTest.framework */; };
 		7B014FBE2B5FB05500036938 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B014FBD2B5FB05500036938 /* AppDelegate.swift */; };
 		7B014FC02B5FB05500036938 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B014FBF2B5FB05500036938 /* SceneDelegate.swift */; };
 		7B014FC22B5FB05500036938 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B014FC12B5FB05500036938 /* ViewController.swift */; };
 		7B014FC52B5FB05500036938 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B014FC32B5FB05500036938 /* Main.storyboard */; };
 		7B014FC72B5FB05700036938 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B014FC62B5FB05700036938 /* Assets.xcassets */; };
 		7B014FCA2B5FB05700036938 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B014FC82B5FB05700036938 /* LaunchScreen.storyboard */; };
+		7B9636D42B6264F60061865C /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9636D22B6264F60061865C /* CollectionViewCell.swift */; };
+		7B9636D52B6264F60061865C /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B9636D32B6264F60061865C /* CollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1FC59F204A820F212963E2FA /* Pods_BinetTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BinetTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C3C78B9F434CA85802F1ED7 /* Pods-BinetTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BinetTest.debug.xcconfig"; path = "Target Support Files/Pods-BinetTest/Pods-BinetTest.debug.xcconfig"; sourceTree = "<group>"; };
+		4F40E19EF6281C21A1EA8027 /* Pods-BinetTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BinetTest.release.xcconfig"; path = "Target Support Files/Pods-BinetTest/Pods-BinetTest.release.xcconfig"; sourceTree = "<group>"; };
 		7B014FBA2B5FB05500036938 /* BinetTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BinetTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B014FBD2B5FB05500036938 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7B014FBF2B5FB05500036938 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +30,8 @@
 		7B014FC62B5FB05700036938 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7B014FC92B5FB05700036938 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7B014FCB2B5FB05700036938 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B9636D22B6264F60061865C /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		7B9636D32B6264F60061865C /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +39,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0182C5308EEB182140F14B73 /* Pods_BinetTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		061C8FA3B9B5119C5935F2EF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1FC59F204A820F212963E2FA /* Pods_BinetTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7B014FB12B5FB05500036938 = {
 			isa = PBXGroup;
 			children = (
 				7B014FBC2B5FB05500036938 /* BinetTest */,
 				7B014FBB2B5FB05500036938 /* Products */,
+				83A2DDFCA3725858B97F529B /* Pods */,
+				061C8FA3B9B5119C5935F2EF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +75,7 @@
 		7B014FBC2B5FB05500036938 /* BinetTest */ = {
 			isa = PBXGroup;
 			children = (
+				7B9636D12B62648A0061865C /* Cell */,
 				7B014FBD2B5FB05500036938 /* AppDelegate.swift */,
 				7B014FBF2B5FB05500036938 /* SceneDelegate.swift */,
 				7B014FC12B5FB05500036938 /* ViewController.swift */,
@@ -67,6 +87,24 @@
 			path = BinetTest;
 			sourceTree = "<group>";
 		};
+		7B9636D12B62648A0061865C /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				7B9636D22B6264F60061865C /* CollectionViewCell.swift */,
+				7B9636D32B6264F60061865C /* CollectionViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		83A2DDFCA3725858B97F529B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3C3C78B9F434CA85802F1ED7 /* Pods-BinetTest.debug.xcconfig */,
+				4F40E19EF6281C21A1EA8027 /* Pods-BinetTest.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +112,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7B014FCE2B5FB05700036938 /* Build configuration list for PBXNativeTarget "BinetTest" */;
 			buildPhases = (
+				3EECD7A2ED7C015EFD4DCFA1 /* [CP] Check Pods Manifest.lock */,
 				7B014FB62B5FB05500036938 /* Sources */,
 				7B014FB72B5FB05500036938 /* Frameworks */,
 				7B014FB82B5FB05500036938 /* Resources */,
+				ABC695FF48BF78DE639951F8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,11 +167,54 @@
 			files = (
 				7B014FCA2B5FB05700036938 /* LaunchScreen.storyboard in Resources */,
 				7B014FC72B5FB05700036938 /* Assets.xcassets in Resources */,
+				7B9636D52B6264F60061865C /* CollectionViewCell.xib in Resources */,
 				7B014FC52B5FB05500036938 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3EECD7A2ED7C015EFD4DCFA1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BinetTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ABC695FF48BF78DE639951F8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BinetTest/Pods-BinetTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BinetTest/Pods-BinetTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BinetTest/Pods-BinetTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7B014FB62B5FB05500036938 /* Sources */ = {
@@ -140,6 +223,7 @@
 			files = (
 				7B014FC22B5FB05500036938 /* ViewController.swift in Sources */,
 				7B014FBE2B5FB05500036938 /* AppDelegate.swift in Sources */,
+				7B9636D42B6264F60061865C /* CollectionViewCell.swift in Sources */,
 				7B014FC02B5FB05500036938 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,6 +366,7 @@
 		};
 		7B014FCF2B5FB05700036938 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C3C78B9F434CA85802F1ED7 /* Pods-BinetTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -293,6 +378,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -310,6 +396,7 @@
 		};
 		7B014FD02B5FB05700036938 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F40E19EF6281C21A1EA8027 /* Pods-BinetTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -321,6 +408,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
